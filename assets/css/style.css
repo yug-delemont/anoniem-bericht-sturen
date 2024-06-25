@@ -47,6 +47,7 @@ header {
 section.hero {
   background: url("../image/hero-bg.svg") 0 0 / cover no-repeat #000;
   height: calc(100vh - 25vh);
+  background-position: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -56,7 +57,7 @@ section.hero {
 }
 .title {
   text-align: center;
-  max-width: 58.75rem;
+  /* max-width: 58.75rem; */
 }
 h1.head {
   color: var(--Primary-White, #fff);
@@ -66,6 +67,8 @@ h1.head {
   letter-spacing: 0.095rem;
   text-transform: uppercase;
   padding-bottom: 0.66rem;
+  max-width: 53.75rem;
+  margin: auto;
 }
 p.hero-para {
   color: var(--Shade-04, #c6cec3);
@@ -74,6 +77,8 @@ p.hero-para {
   font-weight: 400;
   letter-spacing: 0.02rem;
   padding-top: 1.5rem;
+  max-width: 39rem;
+  margin: auto;
 }
 h2.send-head,
 h3.send-message {
@@ -97,8 +102,9 @@ footer {
 }
 section.send {
   background: var(--theme-bg) url("../image/send-bg.svg") no-repeat;
-  width: 100%;
+  background-position: center;
   background-size: cover;
+  width: 100%;
   padding: 80px 0;
 }
 h2.send-head {
@@ -169,6 +175,7 @@ p.content-para {
   font-size: 1rem;
   font-weight: 400;
   line-height: normal;
+  max-width: 36.5rem;
 }
 p.form-error,
 p.form-validation {
@@ -298,8 +305,7 @@ p.copy {
           flex-direction: column;
   gap: 4.47rem;
 }
-img.avatar,
-img.f-logo {
+img.avatar {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -330,4 +336,7 @@ span.seprate {
   width: 0.0625rem;
   background: var(--Shade-07, #596057);
   height: 2.25rem;
+}
+button{
+    cursor: pointer;
 }
